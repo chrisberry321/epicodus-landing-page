@@ -3,20 +3,44 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/scripts.js"></script>
+
+    </script>
+
+    </script>
     <title>Epicodus</title>
   </head>
   <body>
     <header>
       <nav>
-        <img src="img/logo.png" alt="Epicodus logo" />
-        <a href="#">Apply</a>
+        <ul>
+          <li><img src="img/logo.png" alt="Epicodus logo" /></li>
+          <li>STUDENTS</li>
+          <li>COURSES</li>
+          <li>EMPLOYERS</li>
+          <li>ABOUT</li>
+          <li>APPLY</li>
+        </ul>
+
       </nav>
     </header>
     <div class="content">
-      <div class="banner">
-        <img src="img/banner.jpeg" alt="epicodus students" />
-        <h1>this is epicodus</h1>
+
+      <div id="js-parallax-window" class="parallax-window">
+        <div class="parallax-static-content">
+          <b>A VOCATIONAL SCHOOL FOR ASPIARING PROGRAMMERS</b>
+        </div>
+        <div id="js-parallax-background" class="parallax-background"></div>
       </div>
+
+
+
+
+
+      <!-- <div class="banner">
+        <h1>this is epicodus</h1>
+      </div> -->
       <div class="about">
         <div class="students">
           <h2>Students</h2>
@@ -28,6 +52,35 @@
           <h2>Employers</h2>
           <p>
             Epicodus graduates work at companies as small as 3-person startups, as big as a Fortune 100 company, and everything in between. Through internship programs, job fairs, and hands-on support from our staff, we make it easy for companies to connect with our students.
+          </p>
+        </div>
+      </div>
+      <div class="quotes">
+        <div class="quote1">
+          <h3>Learn to Code</h3>
+          <p class="quote">
+            "At this time last year, I was stuck in a dead end job, was questioning my career, and felt like I wasn't living up to my potential. This year, I have a job at a place that is genuinely excited to help me learn and grow. I'm really passionate about development and couldn't be more excited to keep learning in this field."
+          </p>
+          <p>
+            - Anna, former student
+          </p>
+        </div>
+        <div class="quote2">
+          <h3>Gain Hands-On Experience</h3>
+          <p class="quote">
+            "The internship I did with Epicodus was an awesome experience and invaluable in my job search. After completing Epicodus, I sent out quite a few resumes, and ultimately had the choice between two very interested companies. I've worked just over a month now at my new job and couldn't be happier."
+          </p>
+          <p>
+            - Diego, former student
+          </p>
+        </div>
+        <div class="quote3">
+          <h3>Find A New Direction</h3>
+          <p class="quote">
+            "Going through this program and learning a viable skill has turned my life completely around. You helped me kindle a passion and desire for programming and I actually wake up with a smile knowing I have a job I enjoy. I feel this is something I can really excel at."
+          </p>
+          <p>
+            - David, former student
           </p>
         </div>
       </div>

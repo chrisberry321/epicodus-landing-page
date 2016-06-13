@@ -2,7 +2,21 @@
   display: flex;
   justify-content: space-around;
   .students, .employers {
-    padding: 0 5vw;
+    padding:0 5vw 40px 5vw;
+    h2 {
+      text-align: center;
+    }
+    p {
+      max-width: 400px;
+    }
 
+  }
+}
+
+.quotes {
+  display: flex;
+  justify-content: space-around;
+  .quote1, .quote2, .quote3 {
+    margin: 0 20px;
   }
 }

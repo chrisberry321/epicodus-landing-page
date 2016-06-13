@@ -1,14 +1,48 @@
 .banner {
-img{
+  background-image: url(../img/coverphoto.jpg);
+  background-position: center; ;
+  background-repeat: no-repeat;
   width: 100%;
-  height: 40vh;
-
-}
+  height: 80vh;
   h1 {
-     color: red;
-     text-align: center;
-     position: relative;
-     top: -180px;
-
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-top: 180px;
   }
+
 }
+
+$parallax-window-height: 20em;
+$parallax-background-height: $parallax-window-height * 2;
+
+.parallax-window {
+  height: 80vh;
+  // max-height: $parallax-window-height;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.parallax-static-content {
+  color: white;
+  font-size: 28px;
+  padding: 8em 0;
+  position: relative;
+  z-index: 9;
+}
+
+.parallax-background {
+  background: url(../img/coverphoto.jpg);
+  background-position: top;
+  background-size: cover;
+  background-color: beige;
+  height: $parallax-background-height;
+  left: -30px;
+  position: absolute;
+  top: - $parallax-window-height / 8;
+  width: 100%;
+}
+
+// Based on http://codepen.io/skeurentjes/
